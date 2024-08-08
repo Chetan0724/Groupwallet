@@ -8,9 +8,9 @@ function Signin() {
         <form
           action=""
           method="get"
-          className="flex flex-col gap-1.5 font-sans bg-white px-16 py-16 rounded-lg text-lg shadow-2xl"
+          className="flex flex-col gap-1.5 font-sans bg-white px-5 py-8 rounded-lg text-lg shadow-2xl md:px-10"
         >
-          <h2 className="text-2xl font-semibold pb-6 text-center">
+          <h2 className="text-2xl font-semibold pb-2 text-center">
             Welcome Back!
           </h2>
 

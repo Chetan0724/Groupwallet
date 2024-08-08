@@ -8,9 +8,9 @@ function Signup() {
         <form
           action=""
           method="get"
-          className="flex flex-col gap-1.5 font-sans bg-white px-16 py-16 rounded-lg text-lg shadow-2xl"
+          className="flex flex-col gap-1.5 font-sans bg-white px-5 py-8 rounded-lg text-lg shadow-2xl md:px-10"
         >
-          <h2 className="text-2xl font-semibold pb-6 text-center">
+          <h2 className="text-2xl font-semibold pb-2 text-center">
             Create an account
           </h2>
 
@@ -72,54 +72,26 @@ function Signup() {
                 <label htmlFor="" className="mr-2">
                   Male
                 </label>
-                <input type="radio" name="gender" value="Male"  required/>
+                <input type="radio" name="gender" value="Male" required />
               </span>
 
               <span>
                 <label htmlFor="" className="mr-2">
                   Female
                 </label>
-                <input type="radio" name="gender" value="Female"  required/>
+                <input type="radio" name="gender" value="Female" required />
               </span>
 
               <span>
                 <label htmlFor="" className="mr-2">
                   Other
                 </label>
-                <input type="radio" name="gender" value="Other" required/>
+                <input type="radio" name="gender" value="Other" required />
               </span>
             </div>
           </fieldset>
 
           <button
-          onClick={() => {
-            let Username = document.getElementById('Username').value
-            let userEmail = document.getElementById('userEmail').value
-            let password = document.getElementById('password').value
-            let confPassword = document.getElementById('confPassword').value
-            let dateofBirth = document.getElementById('dateofBirth').value
-
-            if (password !== confPassword) {
-              const eleWarn = document.getElementById("warnpara")
-              eleWarn.innerHTML = "Password do not match"
-            }
-            
-            console.log(Username);
-            console.log(userEmail);
-            console.log(password);
-            console.log(confPassword);
-            console.log(dateofBirth);
-
-            let gender = document.querySelectorAll("input[name='gender']")
-            console.log(gender)
-            gender.forEach((radiobtn) => {
-              if (radiobtn.checked) {
-                let genderVal = radiobtn.value
-                console.log(genderVal);
-                
-              }
-            })
-          }}
             type="submit"
             className="bg-[#201E43] text-white rounded-md hover:ring-2 py-1 shadow-2xl"
           >
